@@ -7,6 +7,11 @@
   "nav content content";
 
   grid-template-rows: 50px 1fr;
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 1fr 10fr;
   grid-gap: 4px;
+}
+
+.app-wrapper-content{
+  grid-area: content;
+  background-color: lightslategrey;
 }

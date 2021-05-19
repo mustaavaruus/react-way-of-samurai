@@ -1,0 +1,15 @@
+.nav {
+    grid-area: nav;
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+.item {
+    color: white;
+    padding: 10px;
+}
+
+.item.active {
+  color: darkgrey;
+}
