@@ -6,8 +6,7 @@ const Post = (props) => {
             <img src="https://cdn.cnn.com/cnnnext/dam/assets/200922123042-moon-landing-file-super-tease.jpg" />
             {props.message}
             <div>
-                <span>like {props.likesCount} {props.dislikesCount}</span>
-                <span>dislike {props.likesCount} {props.dislikesCount}</span>
+                <span>like {props.likesCount}</span>
             </div>
         </div>
     )

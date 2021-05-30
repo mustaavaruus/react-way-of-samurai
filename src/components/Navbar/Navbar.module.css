@@ -5,11 +5,11 @@
     font-size: 1.5em;
   }
 
-.item {
-    color: white;
+.item a {
+    color: darkgrey;
     padding: 10px;
 }
 
-.item.active {
-  color: darkgrey;
+.item a.active {
+  color: white;
 }
