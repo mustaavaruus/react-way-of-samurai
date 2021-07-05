@@ -9,6 +9,7 @@ import Dialogs from './components/Dialogs/Dialogs.jsx';
 import News from './components/News/News.jsx';
 import Music from './components/Music/Music.jsx';
 import Settings from './components/Settings/Settings.jsx';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 
 const App = (props) => {
@@ -18,8 +19,8 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div class="app-wrapper-content">
-          <Route exact path="/dialogs" render={() => <Dialogs store={props.store} state={props.state.dialogsPage} />} />
-          <Route path="/profile"  render={() => <Profile profilePage={props.state.profilePage} 
+          <Route exact path="/dialogs" render={() => <DialogsContainer  store={props.store} state={props.state.dialogsPage} />} />
+          <Route path="/profile"  render={() => <Profile profilePage={props.state.profilePage} store={props.store}
                                             dispatch={props.dispatch} />} />
           <Route path="/news"  render={() => <News />} />
           <Route path="/music"  render={() => <Music />} />
